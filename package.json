@@ -1,0 +1,16 @@
+{
+  "name": "neon-halo-homepage",
+  "version": "1.0.0",
+  "description": "Personal homepage for Givaldo Batista — static site with markdown posts",
+  "main": "main.js",
+  "scripts": {
+    "build-posts": "node scripts/build-posts.js"
+  },
+  "author": "Givaldo Batista",
+  "license": "MIT",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^5.1.1"
+  }
+}
+

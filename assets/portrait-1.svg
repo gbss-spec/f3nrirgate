@@ -1,0 +1,24 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1200" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111111"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 460) rotate(90) scale(420 320)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" rx="60" fill="url(#g1)"/>
+  <rect x="70" y="70" width="1060" height="1360" rx="44" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"/>
+  <circle cx="600" cy="430" r="250" fill="url(#halo)" opacity="0.55"/>
+  <path d="M430 760C430 654.307 517.307 568 623 568H670C775.693 568 863 654.307 863 760V1020H430V760Z" fill="#FFFFFF" fill-opacity="0.18"/>
+  <path d="M460 760C460 671.471 532.471 599 621 599H669C757.529 599 830 671.471 830 760V990H460V760Z" fill="#FFFFFF" fill-opacity="0.5"/>
+  <circle cx="590" cy="490" r="92" fill="#FFFFFF" fill-opacity="0.66"/>
+  <path d="M535 1140H666" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="10" stroke-linecap="round"/>
+  <path d="M470 335H730" stroke="#FFFFFF" stroke-opacity="0.58" stroke-width="10" stroke-linecap="round"/>
+  <path d="M450 1220H750" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="24" stroke-linecap="round"/>
+  <path d="M388 270L811 270" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 24"/>
+  <path d="M340 1330L860 1330" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 22"/>
+  <text x="86" y="1430" fill="#FFFFFF" fill-opacity="0.72" font-family="IBM Plex Mono, monospace" font-size="36">portrait_01 // signal</text>
+</svg>

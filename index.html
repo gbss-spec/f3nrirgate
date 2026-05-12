@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Givaldo Batista — Personal Notes</title>
+    <meta
+      name="description"
+      content="Personal homepage of Givaldo Batista: computer engineering student, curious builder, and short-article writer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home">Givaldo Batista</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about"><span class="bilingual"><span class="en">About</span><span class="pt" lang="pt-BR">Sobre</span></span></a>
+        <a href="#articles"><span class="bilingual"><span class="en">Articles</span><span class="pt" lang="pt-BR">Artigos</span></span></a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section id="about" class="intro">
+        <div class="intro-text">
+          <h1>Olá!</h1>
+          <p>
+            Aqui reside meu projeto pessoal, sempre sujeito a mudanças e experiências.
+          </p>
+          <p>
+            Meu nome é Givaldo Batista da Silva Sobrinho, sou graduando de Engenharia da Computação na Universidade Federal de Alagoas e aprendiz de leme no Maceió Canoe Club.
+          </p>
+          <p>
+            Nas horas vagas eu danço, desenho, luto, escrevo e exploro projetos que tangenciam o escopo de meu ensino superior (Este próprio website e o servidor que o hospeda são exemplos de tais projetos).
+          </p>
+          <div class="contact">
+            <span class="tiny-label"><span class="bilingual"><span class="en">Contact</span><span class="pt" lang="pt-BR">Entre em contato</span></span></span>
+            <div>
+              <a href="mailto:jbebs_0@pm.me" class="link-hover">jbebs_0@pm.me</a>
+              <br />
+              <a href="https://cara.app/givaldo" class="link-hover" target="_blank" rel="noopener noreferrer">cara.app/givaldo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="photos">
+        <h2><span class="bilingual"><span class="en">Photos</span><span class="pt" lang="pt-BR">Fotos</span></span></h2>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="assets/20250723_184353.jpg" alt="Givaldo smiling, formal portrait" data-caption="Comportado — Smiling portrait" />
+            <figcaption><span class="bilingual"><span class="en">Enjoying some tea hmm...</span><span class="pt" lang="pt-BR">I do like tea.</span></span></figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="assets/Picsart_26-05-07_22-03-21-447.jpg" alt="Givaldo holding his oar while on the water, eyes closed" data-caption="Leme — Holding the oar on the water" />
+            <figcaption><span class="bilingual"><span class="en">Maro</span><span class="pt" lang="pt-BR"></span>海</span></figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="assets/Picsart_26-05-07_22-17-29-815.jpg" alt="Givaldo portrait with neutral expression" data-caption="Portrait — Neutral expression" />
+            <figcaption><span class="bilingual"><span class="en">Heulwen</span><span class="pt" lang="pt-BR">Heulwen</span></span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="articles" class="notes">
+        <h2><span class="bilingual"><span class="en">Recent Notes</span><span class="pt" lang="pt-BR">Notas Recentes</span></span></h2>
+        <div class="articles-list" id="articles-list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built as a living archive of curiosity and discipline.</p>
+      <a href="#home" class="link-hover"><span class="bilingual"><span class="en">Back to top</span><span class="pt" lang="pt-BR">Voltar ao topo</span></span></a>
+    </footer>
+
+    <!-- Lightbox for viewing photos -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close image">✕</button>
+      <div class="lightbox-inner">
+        <img id="lightbox-img" src="" alt="" />
+        <p id="lightbox-caption" class="tiny-label"></p>
+      </div>
+    </div>
+  </body>
+</html>

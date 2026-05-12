@@ -1,0 +1,22 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1200" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#060606"/>
+      <stop offset="1" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(850 390) rotate(90) scale(220 220)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" rx="60" fill="url(#g3)"/>
+  <rect x="70" y="70" width="1060" height="1360" rx="44" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="8"/>
+  <circle cx="845" cy="400" r="160" fill="url(#spark)" opacity="0.85"/>
+  <path d="M315 1030C315 905.186 416.186 804 541 804H662C786.814 804 888 905.186 888 1030V1236H315V1030Z" fill="#FFFFFF" fill-opacity="0.17"/>
+  <path d="M353 1032C353 925.82 439.82 839 546 839H656C762.18 839 849 925.82 849 1032V1196H353V1032Z" fill="#FFFFFF" fill-opacity="0.52"/>
+  <path d="M350 470H800" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8" stroke-dasharray="1 18" stroke-linecap="round"/>
+  <path d="M540 480L620 410L700 480" stroke="#FFFFFF" stroke-opacity="0.76" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M414 1250L796 1250" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 20"/>
+  <path d="M476 340H724" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 20"/>
+  <text x="86" y="1430" fill="#FFFFFF" fill-opacity="0.72" font-family="IBM Plex Mono, monospace" font-size="36">portrait_03 // wing</text>
+</svg>
