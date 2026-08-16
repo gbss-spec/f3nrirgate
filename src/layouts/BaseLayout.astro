@@ -9,6 +9,9 @@ const {
   title = "f3nrir // Portfolio",
   description = "Landing page cyberpunk de Givaldo Batista da Silva Sobrinho",
 } = Astro.props;
+const siteUrl = Astro.site ?? new URL(Astro.url.origin);
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
+const socialImageUrl = new URL("/images/profile.jpg", siteUrl);
 ---
 
 <!doctype html>
@@ -17,6 +20,14 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={socialImageUrl.href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
     <title>{title}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
