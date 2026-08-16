@@ -6,10 +6,14 @@ const skills = [
   { name: "Japonês (JLPT N5)", tier: "Iniciante", color: "bg-cyber-tierBeginner" },
   { name: "C", tier: "Intermediário", color: "bg-cyber-tierIntermediate" },
   { name: "Python", tier: "Iniciante", color: "bg-cyber-tierBeginner" },
-  { name: "SQL", tier: "Familiar", color: "bg-cyber-tierFamiliar" },
+  { name: "SQL", tier: "Iniciante", color: "bg-cyber-tierBeginner" },
   { name: "MicroPython", tier: "Intermediário", color: "bg-cyber-tierIntermediate" },
-  { name: "Physics", tier: "Intermediário", color: "bg-cyber-tierIntermediate" },
-  { name: "Calculus", tier: "Intermediário", color: "bg-cyber-tierIntermediate" },
+  { name: "Física", tier: "Familiar", color: "bg-cyber-tierFamiliar" },
+  { name: "Cálculo", tier: "Familiar", color: "bg-cyber-tierFamiliar" },
+  { name: "HTML", tier: "Familiar", color: "bg-cyber-tierFamiliar" },
+  { name: "CSS", tier: "Familiar", color: "bg-cyber-tierFamiliar" },
+  { name: "Desenvolvimento e compreensão de Hardware", tier: "Iniciante", color: "bg-cyber-tierBeginner" },
+  { name: "Conceitos de Cybersegurança", tier: "Familiar", color: "bg-cyber-tierFamiliar" },
 ];
 
 const tierClasses = {
@@ -17,6 +21,13 @@ const tierClasses = {
   "Familiar": "text-cyber-tierFamiliar border-cyber-tierFamiliar/50",
   "Intermediário": "text-cyber-tierIntermediate border-cyber-tierIntermediate/50",
   "Avançado": "text-cyber-tierAdvanced border-cyber-tierAdvanced/50",
+};
+
+const tierPoints = {
+  "Iniciante": "*",
+  "Familiar": "**",
+  "Intermediário": "***",
+  "Avançado": "****",
 };
 ---
 
@@ -27,7 +38,7 @@ const tierClasses = {
   <section class="mb-4 rounded-lg border border-cyber-line bg-cyber-panel/90 p-4">
     <p class="text-[10px] tracking-widest text-cyber-muted">&gt; profile.init</p>
 
-    <div class="mt-3 grid gap-4 md:grid-cols-[1fr_120px] md:items-start">
+    <div class="mt-3 grid gap-4 md:grid-cols-[1fr_160px] md:items-start">
       <div>
         <!-- Nome menor e menos gritante -->
         <h1 class="font-display text-xl font-semibold text-cyber-redSoft sm:text-2xl">
@@ -43,7 +54,7 @@ const tierClasses = {
 
       <!-- Espaço para foto -->
       <div class="justify-self-start md:justify-self-end">
-        <div class="h-[120px] w-[120px] overflow-hidden rounded-md border border-cyber-line bg-black/40 shadow-softRed">
+        <div class="h-[160px] w-[160px] overflow-hidden rounded-md border border-cyber-line bg-black/40 shadow-softRed">
           <!-- Troque por sua imagem real -->
           <img
             src="/images/profile.jpg"
@@ -60,7 +71,6 @@ const tierClasses = {
     <h2 class="mb-2 text-sm font-semibold text-cyber-red">&gt; about</h2>
     <p class="text-xs leading-relaxed text-cyber-text">
       Graduando em Engenharia da Computação na UFAL, com ênfase em Cybersegurança e Sistemas Embarcados.
-      Interesses: Maceió Canoe Club, dança, desenho, artes marciais, escrita e self-hosting (f3nrir.dev).
     </p>
   </section>
 
@@ -68,10 +78,10 @@ const tierClasses = {
     <div class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold text-cyber-red">&gt; skill_tree</h2>
       <div class="flex flex-wrap gap-1 text-[10px]">
-        <span class="rounded border border-cyber-tierBeginner/50 px-2 py-0.5 text-cyber-tierBeginner">Iniciante</span>
-        <span class="rounded border border-cyber-tierFamiliar/50 px-2 py-0.5 text-cyber-tierFamiliar">Familiar</span>
-        <span class="rounded border border-cyber-tierIntermediate/50 px-2 py-0.5 text-cyber-tierIntermediate">Intermediário</span>
-        <span class="rounded border border-cyber-tierAdvanced/50 px-2 py-0.5 text-cyber-tierAdvanced">Avançado</span>
+        <span class="rounded border border-cyber-tierBeginner/50 px-2 py-0.5 text-cyber-tierBeginner">Iniciante (*)</span>
+        <span class="rounded border border-cyber-tierFamiliar/50 px-2 py-0.5 text-cyber-tierFamiliar">Familiar (**)</span>
+        <span class="rounded border border-cyber-tierIntermediate/50 px-2 py-0.5 text-cyber-tierIntermediate">Intermediário (***)</span>
+        <span class="rounded border border-cyber-tierAdvanced/50 px-2 py-0.5 text-cyber-tierAdvanced">Avançado (****)</span>
       </div>
     </div>
 
@@ -80,7 +90,7 @@ const tierClasses = {
         <article class="flex items-center justify-between rounded border border-cyber-line bg-black/25 px-3 py-2">
           <span class="text-xs text-cyber-text">{skill.name}</span>
           <span class={`rounded border px-2 py-0.5 text-[10px] ${tierClasses[skill.tier]}`}>
-            {skill.tier}
+            {tierPoints[skill.tier]}
           </span>
         </article>
       ))}
@@ -90,11 +100,31 @@ const tierClasses = {
   <section class="mb-4 rounded-lg border border-cyber-line bg-cyber-panel/90 p-4">
     <h2 class="mb-2 text-sm font-semibold text-cyber-red">&gt; archive</h2>
     <div class="grid gap-2 sm:grid-cols-2">
-      <div class="rounded border border-cyber-line bg-black/20 p-3 text-xs text-cyber-text">f3nrir.dev / Servidor Pessoal</div>
-      <div class="rounded border border-cyber-line bg-black/20 p-3 text-xs text-cyber-text">Criptografia Mítica</div>
-      <div class="rounded border border-cyber-line bg-black/20 p-3 text-xs text-cyber-text">Maceió Canoe Club website</div>
-      <div class="rounded border border-cyber-line bg-black/20 p-3 text-xs text-cyber-text">BellaCosta</div>
-    </div>
+    <article class="rounded border border-cyber-line bg-black/20 p-3 text-xs text-cyber-text">
+      <h3 class="text-cyber-redSoft">f3nrir.dev</h3>
+      <p class="mt-1 leading-relaxed">
+        Portfólio pessoal desenvolvido com assistência de IA e com o propósito de apresentar quem sou e o que faço.
+      </p>
+    </article>
+    <article class="rounded border border-cyber-line bg-black/20 p-3 text-xs text-cyber-text">
+      <h3 class="text-cyber-redSoft">BellaCosta</h3>
+      <p class="mt-1 leading-relaxed">
+        Ideia de jogo top-down em pixel art para narrar uma história rica localizada nas praias de Maceió. WIP, sem link.
+      </p>
+    </article>
+    <article class="rounded border border-cyber-line bg-black/20 p-3 text-xs text-cyber-text">
+      <h3 class="text-cyber-redSoft">Maceió Canoe Club website</h3>
+      <p class="mt-1 leading-relaxed">
+        Landing page desenvolvida para apresentar meu último local de trabalho. Atualmente o site está fora do ar, mas o repositório está disponível no meu GitHub.
+      </p>
+    </article>
+    <article class="rounded border border-cyber-line bg-black/20 p-3 text-xs text-cyber-text">
+      <h3 class="text-cyber-redSoft">Criptografia Mítica</h3>
+      <p class="mt-1 leading-relaxed">
+        Projeto de criptografia RSA criado para tornar seu entendimento mais didático, desenvolvido a partir do curso de Matemática Discreta do primeiro período da minha formação na UFAL. Repositório visível no GitHub.
+      </p>
+    </article>
+  </div>
   </section>
 
   <footer class="rounded-lg border border-cyber-line bg-cyber-panel/90 p-4">
