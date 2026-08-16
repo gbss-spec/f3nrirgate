@@ -1,16 +1,22 @@
 {
-  "name": "neon-halo-homepage",
+  "name": "f3nrirgate",
+  "type": "module",
   "version": "1.0.0",
-  "description": "Personal homepage for Givaldo Batista — static site with markdown posts",
-  "main": "main.js",
+  "private": true,
   "scripts": {
-    "build-posts": "node scripts/build-posts.js"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "author": "Givaldo Batista",
-  "license": "MIT",
   "dependencies": {
-    "gray-matter": "^4.0.3",
-    "marked": "^5.1.1"
+    "astro": "^5.2.0"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^6.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
   }
 }
-

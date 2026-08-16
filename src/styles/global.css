@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base visual */
+@layer base {
+  * {
+    @apply border-cyber-line;
+  }
+
+  html,
+  body {
+    @apply bg-cyber-bg text-cyber-text;
+  }
+
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    @apply underline-offset-4;
+  }
+}
+
+/* Componentes utilitários cyberpunk opcionais */
+@layer components {
+  .cyber-panel {
+    @apply rounded-xl border border-cyber-line bg-cyber-panel/70 backdrop-blur;
+  }
+
+  .cyber-title {
+    @apply font-display font-bold tracking-wide;
+  }
+}
